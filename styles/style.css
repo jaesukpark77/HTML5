@@ -1,5 +1,9 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+/* 기본 스타일 */
+*, *::before, *::after{
+  box-sizing:border-box;
+}
 
 /* body start */
 body{
@@ -10,15 +14,14 @@ body{
 /* layout */
 .header, .visual, .main, .slogan, .footer-inner{
   width:940px;
-  padding:0 30px;
   margin:0 auto;
-  box-sizing:border-box;
 }
 
 /* header start */
 .header{
   background:pink;
   height:15vh;
+  padding:0 30px;
 }
 
 /* visual start */
@@ -31,6 +34,36 @@ body{
 .main{
   background:lightgreen;
   height:50vh;
+  display:flow-root;
+  /* overflow:hidden; */
+  padding:0 15px;
+}
+
+/* 가상요소 방식 */
+/* .main::after{
+  content:'';
+  display:block;
+  clear:both;
+} */
+
+.group{
+  margin:0 15px;
+  float:left;
+}
+
+.group1{
+  background:violet;
+  width:250px;
+}
+
+.group2{
+  background:salmon;
+  width:380px;
+}
+
+.group3{
+ background:gold;
+ width:190px;
 }
 
 /* slogan start */
