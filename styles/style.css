@@ -34,26 +34,14 @@ body{
 .main{
   background:lightgreen;
   height:50vh;
-  display:flow-root;
-  /* overflow:hidden; */
-  padding:0 15px;
-}
-
-/* 가상요소 방식 */
-/* .main::after{
-  content:'';
-  display:block;
-  clear:both;
-} */
-
-.group{
-  margin:0 15px;
-  float:left;
+  display:flex;
+  flex-direction:row;
 }
 
 .group1{
   background:violet;
   width:250px;
+  order:1;
 }
 
 .group2{
