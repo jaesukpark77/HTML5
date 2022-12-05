@@ -19,10 +19,41 @@ body{
 
 /* header start */
 .header{
-  background:pink;
+  background:#fff;
   height:15vh;
   padding:0 30px;
+  border-radius:0 0 15px 15px;
 }
+
+/* member start */
+.member{
+  background:pink;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:flex-end;
+}
+
+/* :before / ::before => first child */
+/* :last / ::last => last child */
+
+/* 우선순위 규칙 */
+/* li (Type Selection) - 1점
+.first (Class Selector) - 10점
+#item (ID Selector) - 100점 */
+
+.member li::before{
+  content:":";
+}
+
+.member .first::before{
+  content:"";
+}
+
+/* .member li:first-child::before{
+  content:"";
+} */
+
+
 
 /* visual start */
 .visual{
