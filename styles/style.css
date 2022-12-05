@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 /* 기본 스타일 */
 *, *::before, *::after{
   box-sizing:border-box;
@@ -41,19 +42,17 @@ body{
 .first (Class Selector) - 10점
 #item (ID Selector) - 100점 */
 
-.member li::before{
+/* .member li::before{
   content:":";
 }
 
 .member .first::before{
   content:"";
-}
+} */
 
 /* .member li:first-child::before{
   content:"";
 } */
-
-
 
 /* visual start */
 .visual{
