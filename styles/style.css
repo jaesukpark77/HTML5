@@ -42,7 +42,7 @@ body{
 
 /* member Start */
 .member{
-  /* background:skyblue; */
+  background:skyblue;
   text-align:right;
   padding:4px 0;
 }
@@ -55,6 +55,11 @@ body{
   background:coral;
   padding:6px 10px;
   display:inherit;
+}
+
+/* 마지막 li 요소에 포함된 a 요소를 선택하여 오른쪽 padding 값을 0으로 재정의 하는 방법 */
+.member li:last-child a{
+  padding-right:0;
 }
 
 .divider{
