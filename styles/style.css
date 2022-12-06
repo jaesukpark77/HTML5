@@ -42,7 +42,6 @@ body{
 
 /* member Start */
 .member{
-  background:skyblue;
   text-align:right;
   padding:4px 0;
   /* position 속성을 활용하여 .member 영역을 오른쪽으로 10px 만큼 이동하기  */
@@ -57,7 +56,6 @@ body{
 }
 
 .member a{
-  background:coral;
   padding:6px 10px;
   display:inherit;
 }
