@@ -112,6 +112,17 @@ body{
   text-shadow:1px 1px 0 #000, -1px -1px 0 #000;
 }
 
+.is-active .menu-button{
+  color:#ff0;
+}
+
+.is-active .menu-button::after{
+  content:'';
+  display:block;
+  border:2px solid #212121;
+
+}
+
 /* double margin float bug */
 /* .menu-item:first-child{
   margin-left:230px;
