@@ -88,7 +88,7 @@ body{
 
 /* main menu */
 .navigation{
-  padding-bottom:80px;
+  padding-bottom:40px;
 }
 
 .menu{
@@ -138,9 +138,9 @@ body{
 } */
 
 .sub-menu{
-  background:pink;
   position:absolute;
   top:47px;
+  padding:4px 0;
   display:none;
 }
 
@@ -181,6 +181,15 @@ body{
 
 .sub-menu a:hover::before, .sub-menu a:focus::before{
   content: '\e801';
+}
+
+.sub-menu a{
+  display:inline-block;
+  padding:6px 0;
+}
+
+.sub-menu a:hover, .sub-menu a:focus{
+  color:#f00;
 }
 
 /* visual start */
