@@ -3,7 +3,7 @@
 @import url(./fontello.css);
 
 /* 숨김 콘텐츠 */
-.a11y-hidden{
+.a11y-hidden, legend{
   position:absolute;
   width:1px;
   height:1px;
@@ -261,11 +261,12 @@ body{
 
 /* main start */
 .main{
-  background:lightgreen;
-  height:50vh;
+  background:#fff;
+  min-height:450px;
   display:flow-root;
   /* overflow:hidden; */
-  padding:0 15px;
+  padding:30px 15px;
+  border-radius:15px 15px 0 0;
 }
 
 /* 가상요소 방식 */
@@ -281,7 +282,6 @@ body{
 }
 
 .group1{
-  background:violet;
   width:250px;
 }
 
@@ -293,6 +293,147 @@ body{
 .group3{
  background:gold;
  width:190px;
+}
+
+/* login section start */
+.login{
+  background:#ed552f radial-gradient(circle at right top, #e8852e, #ed552f);
+  padding:10px;
+  border-radius:5px;
+  box-shadow:5px 5px 0 #ccc;
+}
+
+.login-title{
+  color:#ff0;
+  font-size:15px;
+  font-weight:700px;
+  text-indent:10px;
+}
+
+.login-form, .sign{
+  background:#fff;
+}
+
+.login-form{
+  margin-top:10px;
+  border-radius:5px 5px 0 0;
+  padding:10px 10px 0 10px;
+}
+
+.login-form fieldset{
+  border-bottom:1px solid #aaa;
+  padding-bottom:4px;
+  position:relative;
+}
+
+.login-form div{
+  margin-bottom:6px;
+}
+
+.login-form label{
+  display:inline-block;
+  width:4em;
+}
+
+.login-form input{
+  width:90px;
+  height:22px;
+  border:1px solid #aaa;
+  border-radius:2px;
+  padding:2px 2px 2px 6px;
+}
+
+.login-button{
+  position:absolute;
+  top:0;
+  right:0;
+  width:50px;
+  height:50px;
+  padding:0;
+  font-size:13px;
+  color:#fff;
+  background:#ed552f;
+  border-radius:2px;
+  border:0;
+}
+
+.sign{
+  border-radius:0 0 5px 5px;
+  padding:4px 10px;
+  /* flex 속성 사용 */
+  /* display:flex;
+  flex-flow:row nowrap;
+  justify-content:space-between; */
+  /* font-size:1.4rem; */
+  /* float 속성 사용용 */
+  /* display:flow-root; */
+  /* inline-block 속성 사용 -> 공백 문자가 생겨서 없애기 위한 방법*/
+  font-size:0;
+}
+
+/* float 속성 사용한 경우 */
+/* .sign li:first-child{
+  float:left;
+}
+
+.sign li:last-child{
+  float:right;
+} */
+
+.sign li{
+  /* float:left; */
+  display:inline-block; 
+  width:50%;
+  font-size:14px;
+}
+
+.sign li:first-child{
+  width:35%;
+}
+
+.sign li:last-child{
+  width:65%;
+  text-align:right;
+}
+
+.sign a::before{
+  /* font-family: 'fontello';
+  margin-right:8px;
+  content: '\e803'; */
+  color:#e85e2c;
+}
+
+.sign a{
+  display:inline-block;
+  /* display:block; */
+  padding:6px 0;
+  letter-spacing:-1px;
+}
+
+/* validation section start */
+.validation-list{
+  margin-top:25px;
+}
+
+.validation-list li{
+  margin-top:10px;
+}
+
+.validation-list a{
+  display:block;
+  background:url('./images/validation_icon.png') no-repeat 20px 50%, linear-gradient(to bottom, #ccc, #eee);
+  border:1px solid #ccc;
+  padding:10px 10px 10px 40px;
+  border-radius:20px;
+}
+/* 
+.validation-list a::before{
+  content:url('./images/validation_icon.png');
+  vertical-align:middle;
+} */
+
+.validation-list a:hover, .validation-list a:focus{
+  color:#f00;
 }
 
 /* slogan start */
