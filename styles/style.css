@@ -758,6 +758,85 @@ body{
   padding-bottom: 10px;
 }
 
+/* 인기 사이트 */
+.favorite{
+  position:relative;
+}
+
+.favorite-list{
+  list-style:none;
+  counter-reset:number;
+}
+
+.favorite-list li{
+  margin-top:10px;
+  counter-increment:number;
+  /* position:relative; */
+  display:flex;
+  flex-flow:row nowrap;
+  align-items:center;
+}
+
+.favorite-list li::before{
+  content:counter(number);
+  background:#aaa;
+  color:#fff;
+  /* padding:1px 6px; */
+  font-size:1.2rem;
+  margin-right:5px;
+  border-radius:3px;
+  display:inline-block;
+  width:1.3em;
+  text-align:center;
+  line-height:1.5;
+}
+
+/* .no1::before{
+  content:"1";
+}
+
+.no2::before{
+  content:"2";
+}
+
+.no3::before{
+  content:"3";
+}
+
+.no4::before{
+  content:"4";
+} */
+
+.favorite-list a{
+  /* flex-grow:1; */
+}
+
+.up, .stop, .down{
+  display:inline-block;
+  width:9px;
+  height:11px;
+  background:url("./images/rank.png") no-repeat;
+  margin-left:auto;
+  /* position:absolute;
+  right:0;
+  top:50%;
+  transform:translateY(-50%); */
+}
+
+.stop{
+  background-position:0 50%;
+}
+
+.down{
+  background-position:0 100%;
+}
+
+.favorite-more{
+  position:absolute;
+  top:-8px;
+  right:-8px;
+  padding:8px;
+}
 
 /* slogan start */
 .slogan{
