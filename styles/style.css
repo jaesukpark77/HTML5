@@ -6,6 +6,10 @@
   box-sizing:border-box;
 }
 
+html{
+  font-size:10px;
+}
+
 /* 링크 스타일 */
 a{
   color:inherit;
@@ -15,6 +19,7 @@ a{
 /* body start */
 body{
   background:#eee;
+  font-size:1.4rem;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
@@ -27,7 +32,6 @@ body{
 /* header start */
 .header{
   background:#fff;
-  height:15vh;
   padding:0 30px;
   border-radius:0 0 15px 15px;
 }
@@ -66,40 +70,105 @@ body{
 
 /* visual start */
 .visual{
-  background:orange;
-  height:10vh;
+  height:120px;
 }
 
 /* main start */
 .main{
-  background:lightgreen;
+  background:#fff;
   min-height:450px;
   display:flex;
   flex-flow:row nowrap;
   justify-content:space-between;
   align-items:flex-start;
-  padding:30px;
+  padding:30px 15px;
 }
 
 .group1{
-  background:violet;
   width:250px;
+  margin:0 15px
 }
 
-.group2{
-  background:salmon;
+.group2{mon;
   width:380px;
 }
 
 .group3{
- background:gold;
  width:190px;
 }
+
+/* 신규 이벤트 및 관련 사이트 */
+.gradient-effect{
+  border:1px solid #aaa;
+  border-radius:5px;
+  padding:10px;
+  background:#ccc linear-gradient(to bottom, #ccc, #eee);
+}
+
+.text-xl{
+  font-size:1.5rem;
+  font-weight:700;
+}
+
+.accent-color{
+  color:#a52a2a;
+}
+
+.event{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+
+.event-button-wrapper{
+  /* overflow:hidden; */
+  /* height:24px; */
+  /* padding:2px; */
+  display:flex;
+  flex-flow:row nowrap;
+  align-items:flex-start;
+  gap:5px;
+}
+
+.event-button{
+  width:19px;
+  border:0;
+  height:18px;
+  /* padding:18px 0 0 0; */
+  padding:0;
+  /* text-indent:-9999px; */
+  background:url("./images/back_forward.png") no-repeat;
+}
+
+.event-button-next{
+  /* background-position:-36px 0; */
+  background-position:100% 0;
+}
+
+.event-thumbnail, .event-brief{
+  margin:10px 0;
+}
+
+.event-thumbnail img{
+  border:1px solid #aaa;
+  box-shadow:5px 5px 0 0 #ccc;
+}
+
+.margin-top-default{
+  margin-top:20px;
+}
+
+.related {
+  margin-top:10px;
+}
+
+/* 인기 사이트 */
+
 
 /* slogan start */
 .slogan{
   background:skyblue;
-  height:10vh;
 }
 
 /* footer start */
